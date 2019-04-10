@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'avatar', loadChildren: './pages/avatar/avatar.module#AvatarPageModule' },
   { path: 'button', loadChildren: './pages/button/button.module#ButtonPageModule' },
   { path: 'card', loadChildren: './pages/card/card.module#CardPageModule' },
+  { path: 'checkbox', loadChildren: './pages/checkbox/checkbox.module#CheckboxPageModule' },
+  { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
 ];
 
 @NgModule({
