@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DateTimePage } from './date-time.page';
+import { FabPage } from './fab.page';
 import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: DateTimePage
+    component: FabPage
   }
 ];
 
@@ -23,6 +23,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ComponentsModule
   ],
-  declarations: [DateTimePage]
+  declarations: [FabPage]
 })
-export class DateTimePageModule {}
+export class FabPageModule {}
