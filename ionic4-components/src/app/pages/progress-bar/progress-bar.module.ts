@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import { InicioPage } from './inicio.page';
+
+import { ProgressBarPage } from './progress-bar.page';
+import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: InicioPage
+    component: ProgressBarPage
   }
 ];
 
@@ -17,8 +20,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentsModule
   ],
-  declarations: [InicioPage]
+  declarations: [ProgressBarPage]
 })
-export class InicioPageModule {}
+export class ProgressBarPageModule {}

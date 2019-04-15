@@ -1,0 +1,21 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capitalize> {{nombre}}/{{pais}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-button color="danger" 
+              expand="full"
+              (click)="salirSinArgumentos()">
+    Exit without arguments
+  </ion-button>
+
+  <ion-button color="success" 
+              expand="full"
+              (click)="salirConArgumentos()">
+      Exit with arguments
+  </ion-button>
+
+</ion-content>
